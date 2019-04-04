@@ -1,0 +1,13 @@
+.header {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff1d5e;
+  margin: 20px 0 5px;
+  opacity: 0.8;
+}
+
+.container {
+  padding: 10px 15px;
+  max-height: 510px;
+  overflow-y: auto;
+}
