@@ -1,0 +1,27 @@
+.button {
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  background: #6a6b83;
+  color: #bbbbc6;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button:focus {
+  transform: scaleX(1.02);
+  outline: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+}
+
+.button:active {
+  background: #858599;
+  transform: scaleX(1.01);
+  outline: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+}
