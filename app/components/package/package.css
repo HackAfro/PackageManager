@@ -1,0 +1,25 @@
+.loaderArea {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingText {
+  color: #ff1d5e;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  margin-top: 12px;
+}
+
+.packageArea {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+}
+
+.packageInfo {
+  grid-column: auto / span 2;
+}
