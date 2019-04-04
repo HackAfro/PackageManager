@@ -1,0 +1,18 @@
+{
+  "name": "package-manager",
+  "productName": "PackageManager",
+  "version": "1.0.0",
+  "description": "A desktop application for mananging packages in your project",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "Richard Umoffia",
+    "email": "rich.umoffia@gmail.com",
+    "url": "https://github.com/hackafro"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
