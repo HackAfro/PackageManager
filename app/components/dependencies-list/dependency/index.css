@@ -1,0 +1,17 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  align-items: center;
+}
+
+.packageName {
+  font-size: 14px;
+  color: whitesmoke;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.versionsInput {
+  width: 70px;
+}
