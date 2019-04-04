@@ -1,6 +1,6 @@
 # Package Manager
 
-![ScreenShot: App Main Screen](https://raw.githubusercontent.com/hackafro/PackageManager/master/assets/image_1.png)
+![ScreenShot: App Main Screen](https://github.com/HackAfro/PackageManager/blob/master/assets/image_1.png)
 
 ## Inspiration
 
@@ -16,13 +16,13 @@ To get started, launch the application, click the **Select package file** button
 
 Managing multiple `package.json` files is pretty simple, while viewing an open `package.json` file, click the back button and select another file, you can easily switch between projects on the applications landing page.
 
-![ScreenShot: Multiple projects screen](https://raw.githubusercontent.com/hackafro/PackageManager/master/assets/image_2.png)
+![ScreenShot: Multiple projects screen](https://github.com/HackAfro/PackageManager/blob/master/assets/image_2.png)
 
 ### Find releases for packages in your package.json file
 
 This application displays the latest versions of each package within your project, to upgrade each package version, select the desired version from the versions dropdown beside each project.
 
-![ScreenShot: Update versions screen](https://raw.githubusercontent.com/hackafro/PackageManager/master/assets/image_3.png)
+![ScreenShot: Update versions screen](https://github.com/HackAfro/PackageManager/blob/master/assets/image_3.png)
 
 ## Installation
 
