@@ -1,0 +1,11 @@
+.badge {
+  min-height: 22px;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 2px 4px;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 27px;
+}
