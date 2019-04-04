@@ -1,0 +1,48 @@
+.projectList {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectPath {
+  color: white;
+  opacity: 0.6;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.projectName {
+  font-weight: 500;
+  color: white;
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+
+.projectItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #6a6c83;
+  padding: 11px 10px;
+  width: 90%;
+  border-radius: 3px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.sideIcon {
+  color: #ff1d5e;
+  opacity: 0.8;
+  height: 20px;
+  width: 22px;
+  margin-right: 15px;
+}
