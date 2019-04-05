@@ -27,7 +27,8 @@ class FileProvider extends React.Component {
 
   async componentDidMount() {
     const settings = await getSettings();
-    if (settings) this.setState({ packagePaths: settings.packagePaths });
+    if (settings && settings.packagePaths)
+      this.setState({ packagePaths: settings.packagePaths });
   }
 
   setFilePath({ packagePath, packageFolder }) {
