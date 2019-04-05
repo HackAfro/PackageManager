@@ -2,8 +2,12 @@
 
 import { app, BrowserWindow, globalShortcut } from 'electron';
 import MenuBuilder from './menu';
+import { appUpdater } from './autoupdater';
 
 let mainWindow = null;
+
+const isWindowsOrmacOS = () =>
+  process.platform === 'darwin' || process.platform === 'win32';
 
 if (process.env.NODE_ENV === 'production') {
   const sourceMapSupport = require('source-map-support');
@@ -48,18 +52,18 @@ app.on('ready', async () => {
     process.env.DEBUG_PROD === 'true'
   ) {
     await installExtensions();
+
+    const ret = globalShortcut.register('CommandOrControl+Shift+I', () => {
+      mainWindow.webContents.toggleDevTools();
+    });
+
+    if (!ret) {
+      console.log('registration failed');
+    }
+
+    // Check whether a shortcut is registered.
+    console.log(globalShortcut.isRegistered('CommandOrControl+X'));
   }
-
-  const ret = globalShortcut.register('CommandOrControl+Shift+I', () => {
-    mainWindow.webContents.toggleDevTools();
-  });
-
-  if (!ret) {
-    console.log('registration failed');
-  }
-
-  // Check whether a shortcut is registered.
-  console.log(globalShortcut.isRegistered('CommandOrControl+X'));
 
   mainWindow = new BrowserWindow({
     show: false,
@@ -77,6 +81,15 @@ app.on('ready', async () => {
     }
     mainWindow.show();
     mainWindow.focus();
+
+    if (isWindowsOrmacOS()) {
+      try {
+        appUpdater();
+      } catch (error) {
+        console.log(error);
+      }
+      // Initate auto-updates on macOs and windows
+    }
   });
 
   mainWindow.on('closed', () => {
