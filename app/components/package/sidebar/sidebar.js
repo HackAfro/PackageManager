@@ -7,6 +7,7 @@ import User from 'react-feather/dist/icons/user';
 import ExternalLink from 'react-feather/dist/icons/external-link';
 import ArrowBack from 'react-feather/dist/icons/arrow-left';
 
+import BrowserLink from '../../browser-link';
 import icon from './imgs/package.png';
 import styles from './sidebar.css';
 import Badge from '../../badge/badge';
@@ -51,12 +52,12 @@ const PackageSidebar = ({ packageInfo }) => (
           </div>
         </Fragment>
       )}
-      {packageInfo.homePage && (
+      {packageInfo.homepage && (
         <div className={styles.info}>
           <div className={styles.iconArea}>
-            <a href={packageInfo.homepage} target="__blank">
+            <BrowserLink href={packageInfo.homepage}>
               <ExternalLink size={22} className={styles.sideIcon} />
-            </a>
+            </BrowserLink>
           </div>
           <h5 className={styles.infoText}>GitHub</h5>
         </div>
