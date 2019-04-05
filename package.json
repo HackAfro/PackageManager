@@ -1,7 +1,7 @@
 {
   "name": "package-manager",
   "productName": "Package Manager",
-  "version": "1.0.0",
+  "version": "1.0.0-beta",
   "description": "A desktop application for managing packages in your project",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
@@ -86,7 +86,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HackAfro/package-gui.git"
+    "url": "git+https://github.com/HackAfro/packagemanager.git"
   },
   "author": {
     "name": "Richard Umoffia",
@@ -95,7 +95,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HackAfro/package-gui/issues"
+    "url": "https://github.com/HackAfro/packagemanager/issues"
   },
   "keywords": [
     "electron",
@@ -105,7 +105,7 @@
     "webpack",
     "package.json"
   ],
-  "homepage": "https://github.com/HackAfro/package-gui#readme",
+  "homepage": "https://github.com/HackAfro/packagemanager#readme",
   "jest": {
     "testURL": "http://localhost/",
     "moduleNameMapper": {
