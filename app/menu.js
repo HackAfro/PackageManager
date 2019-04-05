@@ -145,19 +145,23 @@ export default class MenuBuilder {
         {
           label: 'Learn More',
           click() {
-            shell.openExternal('http://github.com/hackafro/package-gui');
+            shell.openExternal('http://github.com/hackafro/packagemanager');
           }
         },
         {
           label: 'Documentation',
           click() {
-            shell.openExternal('http://github.com/hackafro/package-gui#readme');
+            shell.openExternal(
+              'http://github.com/hackafro/packagemanager#readme'
+            );
           }
         },
         {
-          label: 'Search Issues',
+          label: 'Check for updates',
           click() {
-            shell.openExternal('http://github.com/hackafro/package-gui/issues');
+            shell.openExternal(
+              'http://github.com/hackafro/packagemanager/releases'
+            );
           }
         }
       ]
@@ -234,14 +238,14 @@ export default class MenuBuilder {
           {
             label: 'Learn More',
             click() {
-              shell.openExternal('http://github.com/hackafro/package-gui');
+              shell.openExternal('http://github.com/hackafro/packagemanager');
             }
           },
           {
             label: 'Documentation',
             click() {
               shell.openExternal(
-                'http://github.com/hackafro/package-gui#readme'
+                'http://github.com/hackafro/packagemanager#readme'
               );
             }
           },
@@ -249,7 +253,7 @@ export default class MenuBuilder {
             label: 'Search Issues',
             click() {
               shell.openExternal(
-                'http://github.com/hackafro/package-gui/issues'
+                'http://github.com/hackafro/packagemanager/issues'
               );
             }
           }
