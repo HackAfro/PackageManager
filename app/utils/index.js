@@ -2,6 +2,7 @@
 
 import fs from 'fs';
 import { exec } from 'child_process';
+import commandExists from 'command-exists';
 
 if (process.env.NODE_ENV === 'production') {
   const fixPath = require('fix-path');
@@ -38,7 +39,6 @@ export const getPackageInfo = ({ pkg, variant = null }) =>
 export const installPackage = ({ pkg, version, packageFolder }) =>
   new Promise((resolve, reject) => {
     const command = `npm  --prefix ${packageFolder} i ${pkg}@${version}`;
-    console.log(command);
     exec(command, (err, stdout) => {
       if (err) {
         console.log(err);
@@ -48,6 +48,12 @@ export const installPackage = ({ pkg, version, packageFolder }) =>
       resolve(stdout);
     });
   });
+
+export const isNodeEnabled = () => {
+  const command = 'npm';
+
+  return commandExists(command);
+};
 
 export const getPackageFolder = packagePath => {
   const packageIndex = packagePath.indexOf('package.json');
