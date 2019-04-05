@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
 import { getPackageInfo, installPackage } from '../../../utils';
 import { FileContext } from '../../../containers/file-provider/fileProvider';
+
+import BrowserLink from '../../browser-link';
 
 import styles from './index.css';
 
@@ -92,9 +95,9 @@ class Dependency extends Component {
 
     return (
       <div className={styles.item}>
-        <a href={packageUrl} target="__blank" className={styles.packageName}>
+        <BrowserLink href={packageUrl} className={styles.packageName}>
           {dependency.packageName}
-        </a>
+        </BrowserLink>
         <div>
           <select
             name="version"
