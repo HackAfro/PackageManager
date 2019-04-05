@@ -2,9 +2,9 @@
 
 ![ScreenShot: App Main Screen](https://github.com/HackAfro/PackageManager/blob/master/assets/image_1.png)
 
-## Inspiration
+## Why
 
-Managing libraries in Javascript projects should be easier. I created this product because I came in contact with a some fairly new developers that didn't fully understand the command line so this tool was a welcome development in their quest for growth.
+Got tired of jumping to the terminal whenever I needed to update a bunch of packages within a project. I'm sure some of you can relate.
 
 ## How to
 
@@ -12,7 +12,7 @@ This application aims to provide a visual interface for developers to deal with 
 
 To get started, launch the application, click the **Select package file** button which launches a file select dialog. Pick your project's `package.json` file and you're good to go.
 
-### Managing multiple projects.
+### Managing multiple projects
 
 Managing multiple `package.json` files is pretty simple, while viewing an open `package.json` file, click the back button and select another file, you can easily switch between projects on the applications landing page.
 
@@ -30,7 +30,11 @@ Download the app from the [releases](https://github.com/hackafro/PackageManager/
 
 ## OR
 
-Clone the repository to your computer, build and run the Project in Xcode.
+Clone the repository to your computer, build and run the project.
+
+## New releases
+
+For Windows users, you'll be notified whenever there's an update but unfortunately this doesn't apply on MacOS as the updater requires the application to be signed. The application hasn't been signed yet as it costs money to join the Apple developer program; until then you have to manually check for updates.
 
 ## Contributions
 
