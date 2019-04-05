@@ -1,7 +1,7 @@
 {
   "name": "package-manager",
   "productName": "PackageManager",
-  "version": "1.0.0",
+  "version": "1.0.0-beta",
   "description": "A desktop application for mananging packages in your project",
   "main": "./main.prod.js",
   "author": {
